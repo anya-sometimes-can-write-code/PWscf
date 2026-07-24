@@ -1,5 +1,5 @@
 &INPUT
-  fildyn = 'graphene_scf.dyn1'
+  fildyn = 'graphene.dyn1'
   asr = 'crystal'
 /
 
