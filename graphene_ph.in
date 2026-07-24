@@ -7,6 +7,6 @@
   nq1 = 1
   nq2 = 1
   nq3 = 1
-  fildyn = 'graphene_scf.dyn'
+  fildyn = 'graphene.dyn'
   zeu = .false.
 /
