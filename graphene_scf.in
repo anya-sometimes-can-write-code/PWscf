@@ -14,9 +14,7 @@
   ntyp = 1,
   ecutwfc = 120.0,
   ecutrho = 600.0,
-  occupations = 'smearing',
-  smearing = 'gaussian',
-  degauss = 0.01,
+  occupations = 'fixed',
 
 /
 
