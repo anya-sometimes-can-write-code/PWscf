@@ -1,5 +1,5 @@
 &CONTROL
-  calculation = 'vc-relax',
+  calculation = 'scf',
   prefix      = 'graphene',
   outdir      = './temp',
   pseudo_dir  = './',
