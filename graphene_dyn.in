@@ -1,0 +1,5 @@
+&INPUT
+  fildyn = 'graphene.dyn1'
+  asr = 'crystal'
+/
+
