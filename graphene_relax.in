@@ -3,14 +3,14 @@
   prefix      = 'graphene',
   outdir      = './temp',
   pseudo_dir  = './',
-  forc_conv_thr = 1.0d-4,      
+  forc_conv_thr = 1.0d-4,      ! Strict force convergence for accurate phonons
   etot_conv_thr = 1.0d-5,
 /
 
 &SYSTEM
   ibrav     = 4,
   celldm(1) = 4.654,
-  celldm(3) = 6.5,             
+  celldm(3) = 6.5,             ! Increased vacuum to isolate the 2D layer
   nat  = 2,
   ntyp = 1,
   ecutwfc = 120.0,
@@ -21,21 +21,22 @@
 /
 
 &ELECTRONS
-  conv_thr = 1.0d-10          
+  conv_thr = 1.0d-10           ! Tighten convergence for subsequent phonon runs
+/
 
 &IONS
 /
 
 &CELL
-  cell_dofree = '2Dxy'         
+  cell_dofree = '2Dxy'         ! Restricts relaxation to the flat plane only
 /
 
 ATOMIC_SPECIES
   C  12.0107 C_ONCV_PBE-1.2.upf
 
-ATOMIC_POSITIONS alat
-  C    0.000000    0.0000000   0.000000
-  C    0.000000    0.5773503   0.000000
+ATOMIC_POSITIONS (alat)
+C                0.0000000000        0.0000000000        0.0000000000
+C                0.0000000000        0.5773503000        0.0000000000
 
 K_POINTS automatic
   24 24 1   0 0 0
