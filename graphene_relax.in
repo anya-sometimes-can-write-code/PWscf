@@ -3,7 +3,7 @@
   prefix      = 'graphene',
   outdir      = './temp',
   pseudo_dir  = './',
-  forc_conv_thr = 1.0d-5,      
+  forc_conv_thr = 1.0d-4,      
   etot_conv_thr = 1.0d-5,
 /
 
