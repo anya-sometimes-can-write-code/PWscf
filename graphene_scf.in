@@ -16,7 +16,7 @@
   celldm(3) = 6.097561    ! cz / ax ratio (15.0 A vacuum)
   ecutwfc = 120.0,
   ecutrho = 400.0,
-  occupations = 'tetrahedra_opt',
+  occupations = 'smearing',
 /
 
 &ELECTRONS
@@ -40,5 +40,5 @@ ATOMIC_POSITIONS crystal
  C   0.500000000   0.833333333   0.00000000
 
 K_POINTS automatic
-  24 24 1   0 0 0
+ 12 7 1   0 0 0
 
