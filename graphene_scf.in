@@ -17,6 +17,8 @@
   ecutwfc = 120.0,
   ecutrho = 400.0,
   occupations = 'smearing',
+  smearing = 'gaussian',
+  degauss = 0.01,
 /
 
 &ELECTRONS
