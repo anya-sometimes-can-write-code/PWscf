@@ -8,11 +8,12 @@
 /
 
 &SYSTEM
-  ibrav     = 4,
-  celldm(1) = 4.654,
-  celldm(3) = 6.5,             ! Increased vacuum to isolate the 2D layer
-  nat  = 2,
-  ntyp = 1,
+  ibrav     = 8
+  nat       = 4
+  ntyp      = 1
+  celldm(1) = 4.64875     ! ax in Bohr (2.46 Angstroms)
+  celldm(2) = 1.7320508   ! by / ax ratio (sqrt(3))
+  celldm(3) = 6.097561    ! cz / ax ratio (15.0 A vacuum)
   ecutwfc = 120.0,
   ecutrho = 400.0,
   occupations = 'tetrahedra_opt',
@@ -32,9 +33,11 @@
 ATOMIC_SPECIES
   C  12.0107 C_ONCV_PBE-1.2.upf
 
-ATOMIC_POSITIONS (alat)
-C                0.0000000000        0.0000000000        0.0000000000
-C                0.0000000000        0.5773503000        0.0000000000
+ATOMIC_POSITIONS crystal
+ C   0.000000000   0.166666667   0.000000000
+ C   0.000000000   0.500000000   0.000000000
+ C   0.500000000   0.333333333   0.000000000
+ C   0.500000000   0.833333333   0.00000000
 
 K_POINTS automatic
   24 24 1   0 0 0
