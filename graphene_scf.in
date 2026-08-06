@@ -30,7 +30,7 @@
 /
 
 ATOMIC_SPECIES
-  C  12.0107 C_ONCV_PBE-1.2.upf
+  C  12.0107 C.upf
 
 ATOMIC_POSITIONS (alat)
 C                0.0000000000        0.0000000000        0.0000000000
